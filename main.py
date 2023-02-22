@@ -71,14 +71,15 @@ class Cloner(tk.Tk):
         self.quitbtn()
         super(Cloner, self).mainloop()
 
+#set the expiration date ( Optional )
 now = datetime.now()
 dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
 endingdate =  "25/12/2023 13:31:21"
 currentdate = dt_string
 
 if(endingdate > currentdate):
-        bank = Cloner()
-        bank.start()
+        cloner = Cloner()
+        cloner.start()
 else:
-    bank = Cloner()
-    bank.start()
+    cloner = Cloner()
+    cloner.start()
